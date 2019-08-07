@@ -1,0 +1,19 @@
+body div :nth-child(1) p{
+    color: aqua
+}
+
+$tomate: #d11c1c;
+
+
+body{
+    div{
+        &:nth-child(1){
+            p{
+                color: $tomate;
+                &:hover{
+                    text-decoration: black;
+                }
+            }
+        }
+    }
+}
